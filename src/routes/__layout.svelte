@@ -1,27 +1,20 @@
 <script lang="ts">
-	import Header from '$lib/header/Header.svelte';
-	import Footer from '$lib/footer/Footer.svelte';
+	import Header from '$lib/header.svelte';
 	import '../app.css';
 </script>
 
-<Header />
-
-<main>
+<svelte:head>
+	
+</svelte:head>
+<main class="relative w-screen h-screen">
+	<div class="z-0 absolute top-0 inset-x-0 justify-center overflow-hidden pointer-events-none">
+		<picture class="w-[108rem] flex-none inline-flex justify-end">
+			<img src="/flare-effect.webp" alt="" class="w-[90rem] flex-none max-w-none block">
+		</picture>
+	</div>
+	<Header/>
 	<slot />
 </main>
 
-<Footer />
-
-<style>
-	main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		padding: 1rem;
-		width: 100%;
-		max-width: 1024px;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-
+<style windi:preflights:global windi:safelist:global>
 </style>
