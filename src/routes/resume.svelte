@@ -1,5 +1,6 @@
-<script>
+<script lang="ts">
   import { onMount } from 'svelte';
+
 	let StackOverFlowCount = '-1';
   let reposCount = '...'
 	
@@ -11,13 +12,12 @@
 	}
 
   async function fetchReposCount() {
-			const repos = await fetch(`https://api.github.com/users/Beenyaa/repos`).then(r => r.json());
-      reposCount = repos.length
-		}
+    const repos = await fetch(`https://api.github.com/users/Beenyaa/repos`).then(r => r.json());
+    reposCount = repos.length
+}
 
 	onMount(fetchReposCount);
 </script>
-
 
 <section class="pt-16">
 <div class="container lg:w-10/12 px-4 mx-auto">
@@ -26,7 +26,7 @@
       <div class="flex flex-wrap justify-center">
         <div class="w-full flex justify-center">
           <div class="mb-12">
-            <img alt="..." src="/me.webp" class="dark:shadow-slate-800 shadow-lg rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 h-36 w-36 max-w-36">
+            <img alt="..." src="/me.webp" class="rounded-full h-36 w-36 mx-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16">
           </div>
         </div>
         <div class="text-center mt-12">
