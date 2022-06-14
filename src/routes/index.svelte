@@ -1,15 +1,21 @@
+<script>
+    import Alink from '$lib/alink.svelte';
+</script>
+
 <div class="flex relative flex-col justify-center items-center">
     <div class="container mx-auto px-6 flex flex-col justify-between items-center relative py-4 mt-16 md:mt-10">
         <div class="flex flex-col">
-            <img src="/bence-face.webp" class="rounded-full h-36 w-36 mx-auto" alt=""/>
+            <img src="/bence-face.webp" class="mask mask-squircle h-36 w-36 mx-auto" alt=""/>
             <h1 class="md:mt-10 max-w-2xl text-3xl md:text-5xl font-bold mx-auto dark:text-white text-gray-800 text-center py-2">
                 <span class="wave">👋</span> Hey, Internet!
             </h1>
             <p class="max-w-2xl text-lg md:text-2xl my-6 text-left dark:text-white" >
-                I&#x27;m Bence, a Hungarian guy based in the UK and <a class="external-frontpage underline" href="https://www.equans.co.uk/" rel="noreferrer" target="_blank">Full-Stack Engineer @ Equans</a>, currently experimenting with emerging and evolving technologies.
+                I&#x27;m Bence, a Hungarian guy based in the UK and 
+                <Alink link={"https://www.equans.co.uk/"} text={"Full-Stack Engineer @ Equans"}/>, 
+                currently experimenting with emerging and evolving technologies.
             </p>
             <div class="flex items-center justify-center">
-                <a href="/resume" class="uppercase py-2 my-2 px-4 md:mt-10 bg-transparent border-2 dark:border-gray-100 dark:text-white hover:dark:bg-gray-100 hover:dark:text-gray-800 border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white text-md">
+                <a href="/resume" class="uppercase py-2 my-2 px-4 md:mt-10 bg-transparent border-2 dark:border-gray-100 ease-in duration-200 dark:text-white hover:dark:bg-gray-100 hover:dark:text-gray-800 border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white text-md">
                     CONNECT WITH ME
                 </a>
             </div>
@@ -81,4 +87,16 @@
      transform:rotate(0deg)
     }
    }
+.mask{
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	mask-position: center;
+}
+.mask-squircle{
+	-webkit-mask-image: url(/squircle.svg);
+	mask-image: url(/squircle.svg);
+}
 </style>
