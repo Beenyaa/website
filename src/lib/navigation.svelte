@@ -32,7 +32,7 @@
             </a>
         </div>
         <div class="flex items-center">
-            <div class="z-20 absolute inset-0 justify-center dark:bg-gradient-to-u dark:from-gray-900 dark:to-slate-900 bg-gradient-to-r from-gray-100 to-slate-100 w-full h-screen font-sen text-gray-800 dark:text-white text-sm flex flex-col lg:relative lg:flex-row items-center {open} lg:flex">
+            <div class="z-20 absolute inset-0 justify-center dark:bg-gradient-to-u dark:from-gray-900 dark:to-slate-900 bg-gradient-to-r from-gray-100 to-slate-100 w-full h-screen font-sen text-gray-800 dark:text-white text-sm flex flex-col lg:relative lg:flex-row items-center {open} lg:flex lg:bg-none">
                 <!-- <a href="/projects" class="py-2 px-6 flex hover:underline" on:click={closeNavigation}>
                     {#if $page.url.pathname !== '/projects'}
                     {#if $page.url.pathname == '/resume'}.{/if}./projects
