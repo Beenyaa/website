@@ -77,7 +77,7 @@
               <span class="text-xl font-bold block uppercase tracking-wide text-slate-600 dark:text-white dark:text-white">
                 {reposCount}
               </span>
-              <span class="text-sm text-slate-400">Github <br/>Public Repos</span>
+              <span class="text-sm text-slate-400">Public<br/>Github Repos</span>
             </div>
             <div class="lg:mr-4 p-3 text-center" on:mouseover={handleMouseOver} on:click={handleMouseOver} on:mouseout={handleMouseOut}>
               <span class="text-xl font-bold block uppercase tracking-wide text-slate-600 dark:text-white">
