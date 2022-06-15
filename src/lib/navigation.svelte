@@ -14,12 +14,18 @@
         }
         
 	}
+
+    function closeNavigation() {
+        twist = 'rotate-0'
+        open = "hidden"
+        
+	}
 </script>
 
 <nav class="h-24 sm:h-32 flex items-center z-30 w-full">
     <div class="container mx-auto px-6 flex items-center justify-between">
         <div class="uppercase text-gray-800 dark:text-white font-black text-sm lg:flex items-center">
-            <a href="/" class="z-20 py-2 px-6 flex hover:underline">
+            <a href="/" class="z-100 py-2 px-6 flex hover:underline" on:click={closeNavigation}>
                 {#if $page.url.pathname !== '/'}
                     ..
                 {/if}
@@ -27,15 +33,15 @@
         </div>
         <div class="flex items-center">
             <div class="z-20 absolute inset-0 justify-center dark:bg-gradient-to-u dark:from-gray-900 dark:to-slate-900 bg-gradient-to-r from-gray-100 to-slate-100 w-full h-screen font-sen text-gray-800 dark:text-white text-sm flex flex-col lg:relative lg:flex-row items-center {open} lg:flex">
-                <a href="/projects" class="py-2 px-6 flex hover:underline">
+                <!-- <a href="/projects" class="py-2 px-6 flex hover:underline" on:click={closeNavigation}>
                     {#if $page.url.pathname !== '/projects'}
                     {#if $page.url.pathname == '/resume'}.{/if}./projects
                     {/if}
                     {#if $page.url.pathname == '/projects'}
                     .
                     {/if}
-                </a>
-                <a href="/resume" class="py-2 px-6 flex hover:underline">
+                </a> -->
+                <a href="/resume" class="py-2 px-6 flex hover:underline" on:click={closeNavigation}>
                     {#if $page.url.pathname !== '/resume'}
                     {#if $page.url.pathname == '/projects'}.{/if}./resume
                     {/if}
