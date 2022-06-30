@@ -5,7 +5,7 @@
 <div class="flex relative flex-col justify-center items-center">
     <div class="container mx-auto px-6 flex flex-col justify-between items-center relative py-4 mt-16 md:mt-10">
         <div class="flex flex-col">
-            <img src="/bence-face.webp" class="mask mask-squircle h-36 w-36 mx-auto" alt=""/>
+            <img src="/SQUAREME.webp" class="mask mask-squircle h-36 w-36 mx-auto" alt=""/>
             <h1 class="md:mt-10 max-w-2xl text-3xl md:text-5xl font-bold mx-auto dark:text-white text-gray-800 text-center py-2">
                 <span class="wave">👋</span> Hey, Internet!
             </h1>

@@ -27,7 +27,7 @@
       <div class="flex flex-wrap justify-center">
         <div class="w-full flex justify-center">
           <div class="mb-12">
-            <img alt="..." src="/me.webp" class="mask mask-squircle h-36 w-36 mx-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16">
+            <img alt="..." src="/SQUAREME.webp" class="mask mask-squircle h-36 w-36 mx-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16">
           </div>
         </div>
         <div class="text-center mt-12">
